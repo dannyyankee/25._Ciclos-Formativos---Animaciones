@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/menu.css" />
+	<title>Ciclos Formativos.......</title>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<!--  Encabezado lo pongo fuera para que ocupe toda la pantalla-->
+		<a class ="header__link" href="index.html">
+			<h1 class="header__title">Ciclos Formativos</h1>
+		</a>
+	</header> <!-- Fin del encabezado -->
+
+
+	<div class="contenedor">
+		<!--  Contenedor para todo el documento -->
+		<nav id="nav" class="nav">
+			<!--menu -->
+			<ul class="nav__list">
+				<li class="nav__item"> <a class="nav__link"  id="linkSMR" href="#"> Sistemas Microinformáticos</a> </li>
+				<li class="nav__item"> <a class="nav__link" id="linkASIR" href="#"> Administración de Sistemas</a> </li>
+				<li class="nav__item"> <a class="nav__link" id="linkDAW" href="#"> Desarrollo de Aplicaciones </a> </li>
+			</ul>
+
+			<form class="form">
+				<!--  Para hacer el pequeño formulario -->
+				<label class="form__label">Usuario</label>
+				<input class = "form__input"type="text"  maxlength="15">
+				<label class="form__label">Contraseña</label>
+				<input class = "form__input"type="Password"  maxlength="5">
+				<input class = "form__button"type="reset" value=" Ir ">
+			</form>
+		</nav> <!-- Fin del nav-->
+
+		<section id="main">
+			<section class="visor" id="imagen1">
+				<article class="article-text" id="texto1">
+					<h2 id="encabezado" class="article-text__title">SMR</h2>
+					<div id="texto">
+						<p class="article-text__text">El ciclo formativo de grado medio "Sistemas Microinformaticos y Redes"
+							tiene una duración de 2000 horas que se imparten a lo largo de dos cursos lectivos. </p>
+						<p class="article-text__text">Este título se estableció mediante el Real Decreto 4/2003 publicado
+							en el BOE nº 124 de 24/05/03, y el currículo se estableció mediante
+							el Real Decreto 9/2003 publicado en el BOE nº 192 de 12/08/03.</p>
+						<p class="article-text__text">Se puede acceder al ciclo siempre que se supere la correspondiente prueba
+							de acceso (se puede solicitar la exención de esta prueba si se tiene superada
+							la prueba de acceso a la universidad para mayores de 25 años).</p>
+					</div>
+				</article>
+			</section><!-- final visor-->
+		</section>
+
+		<footer id="footer" class="footer">
+			<!-- utilizo el evento onmouseover para mostrar la capa que quiero visualizar -->
+			<section id="cajaSMR" class="box">
+				<h2 class="box__title"> SMR</h2>
+				<div class="box__box">
+					<p class="box__text">> Sistemas Microinformáticos.</p>
+					<p class="box__text">> Administración Sistemas. </p>
+				</div>
+			</section>
+
+			<section id="cajaASIR" class="box">
+				<h2 class="box__title"> ASIR</h2>
+				<div class="box__box">
+					<p class="box__text">> Sistemas Microinformáticos.</p>
+					<p class="box__text">> Administración Sistemas.</p>
+				</div>
+			</section>
+
+			<section id="cajaDAW" class="box">
+				<h2 class="box__title"> DAW</h2>
+				<div class="box__box">
+					<p class="box__text">> Sistemas Microinformáticos.</p>
+					<p class="box__text">> Administración Sistemas. </p>
+				</div>
+			</section>
+
+		</footer>
+	</div><!-- final contendor-->
+
+	</div> <!-- final contenedor-->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

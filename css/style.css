@@ -1,0 +1,277 @@
+@font-face {
+	font-family: mothership;
+	src: url('../fuentes/Nemesia-regular.ttf') format('truetype');
+}
+
+body {
+	background-image: url("../imagenes/fondoppal.jpg");
+	overflow: hidden;
+}
+
+.header {
+	position: relative;
+	margin-bottom: 20px;
+	background-image: url("../imagenes/encabezado.png");
+
+	animation-name: muevecabecera;
+	animation-duration: 6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes muevecabecera {
+	0% {
+		left: -1500px;
+		opacity: 0;
+	}
+
+	40% {
+		left: 500px;
+		opacity: 0.75;
+	}
+
+	90% {
+		left: -500px;
+		opacity: 0.75;
+	}
+
+	100% {
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+.header__title {
+	font-size: 4em;
+	color: #aaa;
+	text-align: center;
+	padding: 10px 0px;
+	word-spacing: 2px;
+	font-variant: small-caps;
+	font-family: tahoma;
+}
+
+.header__link {
+	text-decoration: none;
+}
+
+.contenedor {
+	margin: 0px auto;
+	padding-bottom: 0.75rem;
+	max-width: 1200px;
+	border-radius: 3px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.03);
+	opacity: 0;
+
+	animation-name: muevecontenedor;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	/* Añade las propiedades de la animación AQUI*/
+
+}
+
+@keyframes muevecontenedor {
+	0%{	
+		opacity: 0;
+		transform: rotate(180deg) scale(0.8);
+	}
+	20%{
+		transform: rotate(0deg) scale(0.5);
+	}
+	100%{
+		opacity: 1;
+		transform: rotate(0deg) scale(1);
+	}
+	/* Añade los fotogramas clave AQUI*/
+}
+
+
+.nav {
+	margin-bottom: 20px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, .09);
+	opacity: 0;
+
+	animation-name: muevenav;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	/* Añade las propiedades de la animación AQUI*/
+}
+
+
+@keyframes muevenav {
+	from{
+		opacity: 0.2;
+		transform: translateY(50px)
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px)
+
+	}
+	/* Añade los fotogramas clave AQUI*/
+}
+
+.visor {
+	margin: 0px auto;
+	width: 1000px;
+	height: 350px;
+	border-radius: 3px;
+	background-image: url("../imagenes/visor4.png");
+}
+
+
+.article-text {
+	position: relative;
+	width: 250px;
+	height: 320px;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: justify;
+	padding: 15px;
+	font-size: 0.75em;
+	letter-spacing: 0.05em;
+	font-family: arial;
+	color: #fff;
+	border-radius: 2px;
+	line-height: 1.05em;
+	left: 0px;
+
+	animation-name: muevetexto;
+	animation-duration: 3s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+	/* Añade las propiedades de la animación AQUI*/
+
+}
+
+@keyframes muevetexto {
+	0%{
+		transform: rotateY(0deg);
+		opacity: 0.2;
+		left: 0px;
+	}
+	100%{
+		transform: rotateY(360deg);
+		opacity: 1;
+		left: 720px;
+
+	}
+	/* Añade los fotogramas clave AQUI*/
+}
+
+.article-text__title {
+	background-color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+	padding: 5px;
+	border-bottom: 1 px solid #fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+}
+
+.article-text__text {
+	margin: 1rem;
+}
+
+.form {
+	color: #6a6a6a;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: arial;
+}
+
+.form__label {
+	font-size: 0.6rem;
+}
+
+.form__input {
+	background-color: #f2f2f2;
+	border-radius: 2px;
+	width: 75px;
+	border: none;
+	outline: none;
+	border: 0.01rem solid #ccc;
+}
+
+.form__button {
+	width: 30px;
+	border: none;
+	outline: none;
+	font-variant: small-caps;
+	background-color: #f0ecec;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	text-align: center;
+	opacity: 0;
+
+	animation-name: muevepie;
+	animation-duration: 3s;
+	animation-delay: 5.5s;
+	animation-fill-mode: forwards;
+	/* Añade las propiedades de la animación AQUI*/
+}
+
+@keyframes muevepie {
+	from{
+		rotate: 40deg;
+		transform: translateX(200px);
+		opacity: 0;
+	}
+	to{
+		rotate: 0deg;
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	/* Añade los fotogramas clave AQUI*/
+}
+
+.box {
+	position: relative;
+	background-color: rgba(0, 0, 0, .09);
+	border: 1px solid #d9d9d9;
+	width: 27%;
+	height: 100px;
+	font-family: verdana;
+	color: #6a6a6a;
+	overflow: auto;
+	padding: 15px;
+	margin-left: 10px;
+	border-radius: 3px;
+	font-weight: bold;
+	/* Necesitas añadir algo ???? */
+}
+
+.box:hover {
+	/* Necesitas añadir algo ???? */
+}
+
+.box__title {
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: arial;
+	border-radius: 2px;
+	margin: 0;
+}
+
+.box__box {
+	position: absolute;
+	right: 25px;
+	width: 175px;
+	margin: 10px 5px 0px 25px;
+	padding: 15px;
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	font-size: 0.5em;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.box__text {
+	margin-bottom: 0.5em;
+}

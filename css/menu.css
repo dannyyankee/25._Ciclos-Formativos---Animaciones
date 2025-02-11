@@ -1,0 +1,29 @@
+.nav {
+	font: 0.9em arial;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.nav__list {
+	list-style-type: none;
+	display: flex;
+}
+
+.nav__link {
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 0;
+	color: #6a6a6a;
+	font-variant: small-caps;
+	width: 200px;
+	display: block;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.nav__link:hover {
+	color: white; 
+	background: #184364;
+}
